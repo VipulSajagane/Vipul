@@ -10,7 +10,7 @@ import loggedin from './Images/loggedin.png'
 
 const TraineeProfile=()=>{
 
-  let username=sessionStorage.getItem("user");
+  let username=localStorage.getItem("user");
   let navigate=useNavigate();
   const [responseData, setResponseData] = useState({});
   const [healthData,setHealthData] = useState({});
@@ -37,7 +37,7 @@ const TraineeProfile=()=>{
    
    
   }).catch((error)=>{
-      alert(error);
+    console.log(error);
           })
  },[]);
 

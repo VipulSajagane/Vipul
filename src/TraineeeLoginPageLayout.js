@@ -9,8 +9,8 @@ function TraineeeLoginPageLayout(){
       let navigate=useNavigate();
       const Logout=()=>{
       
-        // localStorage.clear();
-        sessionStorage.clear();
+        
+        localStorage.clear();
         navigate('/home');
       
       };

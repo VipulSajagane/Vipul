@@ -9,7 +9,7 @@ function TrainerLoginPageLayout(){
   let navigate=useNavigate();
   const Logout=()=>{
   
-    sessionStorage.clear();
+    localStorage.clear();
     navigate('/home');
   
   };

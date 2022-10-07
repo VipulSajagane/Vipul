@@ -17,7 +17,7 @@ const initialValues={
   adharno:"",
   joiningdate:"",
   address:"",
-  token:"",
+  //token:"",
 };
 
 const Trainee=()=>{
@@ -49,14 +49,14 @@ const Trainee=()=>{
     <form action="" onSubmit={handleSubmit}className='moduleContents formsBackground traineeForm backgroundImages'>
         <h1 className='moduleHeadings traineeHeading allFormHeadings'>TraineeForm</h1>
         <hr/>
-        <Form.Group className="TrainerForm " controlId="formBasicPassword">
+        {/* <Form.Group className="TrainerForm " controlId="formBasicPassword">
         <Form.Label>Token No.:</Form.Label>
         <Form.Control type="text" name="token" value={values.token} onBlur={handleBlur} onChange={handleChange}  placeholder="Enter valid token number" />
         <Form.Text className="text-muted"></Form.Text>
         </Form.Group>
         <div className='formValidationError'>
          {errors.token && touched.token ? (<p>{errors.token}</p>):null}
-         </div>
+         </div> */}
 
 
 

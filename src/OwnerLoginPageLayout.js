@@ -18,7 +18,7 @@ function OwnerLoginPageLayout() {
   const Logout=()=>{
 
      // localStorage.clear();
-     sessionStorage.clear();
+     localStorage.clear();
   
     navigate('/home');
   

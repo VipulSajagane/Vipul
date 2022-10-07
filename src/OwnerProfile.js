@@ -12,7 +12,7 @@ const OwnerProfile=()=>{
   let[searchparams]=useSearchParams();
   //let username=searchparams.get("username");
   //localStorage.setItem('username',username);
-  let username=sessionStorage.getItem("user");
+  let username=localStorage.getItem("user");
 
   let navigate=useNavigate();
   console.log(username);

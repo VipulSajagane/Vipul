@@ -52,17 +52,17 @@ const Login=()=>{
        // console.log(resp.data.id)
   
           // forward the user to home page
-          sessionStorage.setItem("user",username);
+          localStorage.setItem("user",username);
           navigate(`/ownerpage?username=${username}`);
         }
         else if (role=="trainer") {
            
-          sessionStorage.setItem("user",username);
+          localStorage.setItem("user",username);
             navigate(`/trainerpage?username=${username}`);
            // navigate(`updatetrainer?id=${id}`)
           }
           else if (role=="trainee") {
-            sessionStorage.setItem("user",username);
+            localStorage.setItem("user",username);
             navigate(`/traineeePage?username=${username}`);
           }else{
 
